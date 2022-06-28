@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
     <title>HTML/CSS/JS for Advanced Tabs Plugin</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="navigation">
         <ul>
-            <li class="list active">
+            <li class="list active" data-tab-target="#home">
                 <a href="#">
                     <span class="icon">
                         <ion-icon name="home-outline"></ion-icon>
@@ -18,7 +19,7 @@
                     <span class="title">Home</span>
                 </a>
             </li>
-            <li class="list">
+            <li class="list" data-tab-target="#profile">
                 <a href="#">
                     <span class="icon">
                         <ion-icon name="person-outline"></ion-icon>
@@ -26,7 +27,7 @@
                     <span class="title">Profile</span>
                 </a>
             </li>
-            <li class="list">
+            <li class="list" data-tab-target="#photos">
                 <a href="#">
                     <span class="icon">
                         <ion-icon name="images-outline"></ion-icon>
@@ -34,7 +35,7 @@
                     <span class="title">Photos</span>
                 </a>
             </li>
-            <li class="list">
+            <li class="list" data-tab-target="#messaging">
                 <a href="#">
                     <span class="icon">
                         <ion-icon name="mail-open-outline"></ion-icon>
@@ -42,7 +43,7 @@
                     <span class="title">Messaging</span>
                 </a>
             </li>
-            <li class="list">
+            <li class="list" data-tab-target="#settings">
                 <a href="#">
                     <span class="icon">
                         <ion-icon name="settings-outline"></ion-icon>
@@ -54,6 +55,28 @@
 
             </div>
         </ul>
+    </div>
+    <div class="tab-content">
+        <div id="home">
+            <h1>Home</h1>
+            <p>Home Tings</p>
+        </div>
+        <div id="profile">
+            <h1>Profile</h1>
+            <p>Profile Tings</p>
+        </div>
+        <div id="photos">
+            <h1>Photo</h1>
+            <p>Photo Tings</p>
+        </div>
+        <div id="messaging">
+            <h1>Messaging</h1>
+            <p>Messaging Tings</p>
+        </div>
+        <div id="settings">
+            <h1>Settings</h1>
+            <p>Settings Tings</p>
+        </div>
     </div>
 
     <script>
