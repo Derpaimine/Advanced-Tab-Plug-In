@@ -12,11 +12,8 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
     background: var(--clr);
+    margin: 40px;
 }
 
 .navigation{
@@ -132,4 +129,25 @@ body {
 }
 .navigation ul li:nth-child(5).active ~ .indicator {
     transform: translateX(calc(70px * 4));
+}
+
+/* Function for content */
+[data-tab-content]{
+    display:none;
+}
+
+.active[data-tab-content]{
+    display:block;
+    animation-name: stretch;
+    animation-duration: 1s;
+    background-color:white;
+    padding:25px;
+    margin-top: 25px;
+    border-radius:15px;
+    width:75%;
+}
+
+@keyframes stretch{
+    from{width:25%;}
+    to{width: 75%}
 }
