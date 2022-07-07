@@ -1,12 +1,12 @@
 <?php 
 
-/*
-Plugin Name: Advanced tabs
-Description: Creates an advanced animated tab sorting plug in
-Version: 1.0.0
-Author: Jordan Dawson & Dale De Kock
-Text Domain:
-License: GPLv2 or later
+/** 
+*Plugin Name: Advanced tabs
+*Description: Creates an advanced animated tab sorting plug in
+*Version: 1.0.0
+*Author: Jordan Dawson & Dale De Kock
+*Text Domain:
+*License: GPLv2 or later
 */
 
 /*
